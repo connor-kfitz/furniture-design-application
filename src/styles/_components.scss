@@ -1,0 +1,52 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 4rem 8.5rem;
+
+    &__logo {
+        font-size: 28px;
+        font-family: 'Gilroy-Bold', sans-serif;
+    }
+
+    &__item-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: 57.5rem;
+    }
+
+    &__item {
+        margin: 0 2rem;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__item-dropdown {
+        margin-left: 1.25rem;
+    }
+
+    &__cart-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__cart-items {
+        position: absolute;
+        top: .75rem;
+        right: -1rem;
+        text-align: center;
+        background-color: #E58411;
+        border-radius: 10rem;
+        width: 2rem;
+    }
+
+}

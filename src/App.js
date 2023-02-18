@@ -1,9 +1,10 @@
 import './styles/main.scss';
+import HeaderView from './components/header-view';
 
 function App() {
   return (
     <div className="App">
-      Test
+      <HeaderView></HeaderView>
     </div>
   );
 }
