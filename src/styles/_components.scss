@@ -141,6 +141,7 @@
     margin-top: auto;
     cursor: pointer;
     width: fit-content;
+    text-decoration: none;
 
     &__name {
         font-size: 1.4rem;
@@ -152,4 +153,153 @@
         width: 3.75rem;
         height: 1.1rem;
     }
+}
+
+.product-slider {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: $secondary-background;
+    padding: .5rem 0;
+    border-radius: 10rem;
+    width: 36rem;
+    margin-bottom: 13rem;
+
+    &__item {
+        font-size: 1.8rem;
+        padding: .5rem 1.75rem;
+        border-radius: 10rem;
+        cursor: pointer;
+
+        &.active {
+            background-color: #fff;
+        }
+    }
+}
+
+.product-cards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 6rem;
+
+    &__item {
+        flex: 1;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__top-box {
+        position: relative;
+        background-color: #FAFAFA;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        padding-top: 23rem;
+    }
+
+    &__chair-img {
+        position: absolute;
+        top: -5.5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    &__bottom-box {
+        background-color: #fff;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        
+        padding: 1rem 2rem 3rem 2rem;
+
+    }
+
+    &__type {
+        color: #8D8D8D;
+        font-family: 'Inter';
+        font-size: 1.6rem;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
+
+    &__rating {
+        margin-bottom: 3.5rem;
+    }
+
+    &__purchase-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__price {
+        display: flex;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 2.1rem;
+        margin-right: auto;
+    }
+
+    &__currency {
+        font-size: 1.5rem;
+        margin-right: .3rem;
+        margin-top: .1rem;
+    }
+
+    &__add-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0D1B39;
+        height: 4.9rem;
+        width: 4.9rem;
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+
+    &__left-carousel-arrow {
+        position: absolute;
+        z-index: 10;
+        left: -2.5rem;
+        top: 37%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 4.9rem;
+        width: 4.9rem;
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+
+    &__right-carousel-arrow {
+        position: absolute;
+        z-index: 10;
+        right: -2.5rem;
+        top: 37%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 4.9rem;
+        width: 4.9rem;
+        transform: rotate(180deg);
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+}
+
+.rating-star {
+    margin-right: .5rem;
 }
