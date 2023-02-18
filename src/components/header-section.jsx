@@ -1,7 +1,7 @@
 import Nav from "./nav";
 import SearchBar from "./searchBar";
 
-export default function HeaderView() {
+export default function Header() {
     return (
         <header className="header">
             <Nav></Nav>

@@ -38,6 +38,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     &__cart-items {
@@ -92,10 +93,63 @@
         height: 3.4rem;
         background-color: $accent;
         border-radius: 10rem;
+        cursor: pointer;
     }
 
     &__icon {
         height: 1.5rem;
         width: 1.5rem;
+    }
+}
+
+.intro-content {
+    display: flex;
+
+    &__item {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        list-style: none;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__large-title {
+        font-size: 4.2rem;
+        line-height: 1.2;
+        font-family: 'Gilroy-Bold';
+        margin: auto 0;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-family: 'Gilroy-Bold';
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        font-family: 'Gilroy-Regular';
+        margin: 1.75rem 0 2rem 0;
+    }
+}
+
+.link-product{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    cursor: pointer;
+    width: fit-content;
+
+    &__name {
+        font-size: 1.4rem;
+        color: $accent;
+        margin-right: 1.5rem;
+    }
+
+    &__arrow {
+        width: 3.75rem;
+        height: 1.1rem;
     }
 }
