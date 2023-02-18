@@ -3,10 +3,11 @@
     justify-content: space-between;
     color: #fff;
     padding: 4rem 8.5rem;
+    margin-bottom: 4rem;
 
     &__logo {
         font-size: 28px;
-        font-family: 'Gilroy-Bold', sans-serif;
+        font-family: 'Gilroy-Bold';
     }
 
     &__item-box {
@@ -44,9 +45,57 @@
         top: .75rem;
         right: -1rem;
         text-align: center;
-        background-color: #E58411;
+        background-color: $accent;
         border-radius: 10rem;
         width: 2rem;
     }
+}
 
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    color: $light-grey;
+    font-family: 'Gilroy-Regular';
+    padding: 8px 8px 8px 20px;
+    background-color: black;
+    border: .1rem solid #FFFFFF99;
+    border-radius: 10rem;
+    max-width: 35rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    margin: 0 auto;
+
+    &__input {
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $light-grey;
+        }
+    }
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.4rem;
+        height: 3.4rem;
+        background-color: $accent;
+        border-radius: 10rem;
+    }
+
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
 }
