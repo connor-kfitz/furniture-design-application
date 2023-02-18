@@ -303,3 +303,115 @@
 .rating-star {
     margin-right: .5rem;
 }
+
+.experiences-img-cont {
+    position: relative;
+    margin: 6rem 6rem 0 0;
+
+    &__top-decoration {
+        position: absolute;
+        left: 0;
+        top: -6rem;
+        width: 72%;
+        height: 6rem;
+        background-color: $primary-background;
+        border-top-right-radius: 2rem;
+    }
+
+    &__bottom-decoration {
+        position: absolute;
+        right: -6rem;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 6rem;
+        height: 65%;
+        background-color: $primary-background;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+}
+
+.experiences-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 12rem;
+
+    &__header {
+        font-family: 'Gilroy-Light';
+        font-size: 1.8rem;
+        letter-spacing: 0.175em;
+        color: $accent;
+        margin-bottom: 1.25rem;
+    }
+
+    &__title {
+        font-family: 'Gilroy-Bold';
+        font-size: 4.2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 1.85;
+        opacity: 0.8;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.materials-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8.5rem;
+
+    &__header {
+        font-family: 'Gilroy-Light';
+        font-size: 1.8rem;
+        letter-spacing: 0.175em;
+        color: $accent;
+        margin-bottom: 1.25rem;
+    }
+
+    &__title {
+        font-family: 'Gilroy-Bold';
+        font-size: 4.2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 1.85;
+        opacity: 0.8;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.materials-img-cont {
+    display: flex;    
+    align-items: flex-end;
+
+    &__left-box {
+        margin-bottom: -8.25rem;
+    }
+
+    &__small-img {
+        margin-bottom: -4rem;
+    }
+
+    &__right-box {
+        position: relative;
+        margin-left: 1.5rem;
+    }
+
+    &__top-decoration {
+        position: absolute;
+        top: -6rem;
+        right: 0;
+        width: 62%;
+        height: 6rem;
+        background-color: $primary-background;
+        border-top-left-radius: 2rem;
+    }
+}
