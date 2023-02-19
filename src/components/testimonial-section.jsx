@@ -5,6 +5,7 @@ import TestimonialBackgroundThree from "../images/testimonial-three-background.p
 import TestimonialProfileOne from "../images/testimonial-one-profile.png";
 import TestimonialProfileTwo from "../images/testimonial-two-profile.png";
 import TestimonialProfileThree from "../images/testimonial-three-profile.png";
+import CarouselArrow from "../images/carousel-arrow-icon.svg";
 
 export default function Testimonials() {
 
@@ -40,6 +41,12 @@ export default function Testimonials() {
             <h2 className="testimonials__header">Testimonials</h2>
             <div className="testimonials__description">Our Clients Reviews</div>
             <ul className="testimonials-cards">
+                <div className="testimonials-cards__left-carousel-arrow">
+                    <img class="testimonials-cards__coursel-arrow-icon" src={CarouselArrow} alt="Carousel arrow"></img>
+                </div>
+                <div className="testimonials-cards__right-carousel-arrow">
+                    <img class="testimonials-cards__coursel-arrow-icon" src={CarouselArrow} alt="Carousel arrow"></img>
+                </div>
                 {testimonialData.map((item)=>(
                     <li className="testimonials-cards__item" style ={{backgroundImage:"url("+item.backgroundImg+")"}}>
                         <div className="testimonials-cards__content">

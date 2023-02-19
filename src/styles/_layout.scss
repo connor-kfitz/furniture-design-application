@@ -6,6 +6,15 @@
     background-repeat: no-repeat;
     background-position: top;
     height: 100vh;
+    padding: 0 8rem;
+
+    @include respond($breakpoint-two) {
+        padding: 0 4rem;
+    }
+
+    @include respond($breakpoint-three) {
+        height: 60vh;
+    }
 
     &__text {
         color: #fff;
@@ -14,6 +23,14 @@
         text-align: center;
         line-height: 1.3;
         margin-bottom: 2rem;
+
+        @include respond($breakpoint-three) {
+            font-size: 6rem;
+        }
+
+        @include respond($breakpoint-six) {
+            font-size: 5rem;
+        }
     }
 
     &__sub-text {
@@ -23,11 +40,19 @@
         font-family: 'Gilroy-Regular';
         text-align: center;
         margin-bottom: 4.5rem;
+
+        @include respond($breakpoint-three) {
+            font-size: 2rem;
+        }
     }
 }
 
 .intro {
     padding: 10rem 7.5rem 12rem 7.5rem;
+
+    @include respond($breakpoint-five) {
+        padding: 10rem 2rem 12rem 2rem;
+    }
 }
 
 .top-products {
@@ -36,6 +61,10 @@
     align-items: center;
     background-color: $primary-background;
     padding: 3.5rem 11rem 5rem 11rem;
+
+    @include respond($breakpoint-five) {
+        padding: 3.5rem 4rem 5rem 4rem;
+    }
 
     &__header {
         font-family: 'Gilroy-Bold';
@@ -49,16 +78,32 @@
     display: flex;
     align-items: center;
     padding: 22rem 0 27rem 0;
+
+    @include respond($breakpoint-three) {
+        padding: 16rem 0 20rem 0;
+    }
 }
 
 .materials {
     display: flex;
     align-items: center;
-    padding: 0 0 24rem 0;
+    padding-bottom: 24rem;
+
+    @include respond($breakpoint-three) {
+        padding-bottom: 20rem;
+    }
 }
 
 .testimonials {
-    padding-bottom: 25rem;
+    padding: 0 11rem 25rem 11rem;
+
+    @include respond($breakpoint-three) {
+        padding-bottom: 16rem;
+    }
+
+    @include respond($breakpoint-five) {
+        padding: 0 4rem 25rem 4rem;
+    }
     
     &__header {
         font-family: 'Gilroy-Light';
@@ -80,4 +125,12 @@
 .footer {
     background-color: $primary-background;
     padding: 8rem 17.5rem;
+
+    @include respond($breakpoint-two) {
+        padding: 8rem 9rem;
+    }
+
+    @include respond($breakpoint-three) {
+        padding: 8rem 6rem;
+    }
 }

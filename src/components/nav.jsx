@@ -1,6 +1,6 @@
 import shoppingCart from "../images/bag-img.svg"
 import downArrow from "../images/down-arrow-img.svg"
-
+import MenuIcon from "../images/menu-icon.png";
 
 export default function Nav() {
 
@@ -28,6 +28,7 @@ export default function Nav() {
 
     return (
         <nav className="nav">
+            <div className="nav__mobile-menu"></div>
             <div className="nav__logo" >Panto</div>
             <ul className="nav__item-box" >
                 {navItems.map((item)=>(

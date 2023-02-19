@@ -22,8 +22,8 @@ export default function Intro() {
             <ul className="intro-content">
                 <li className="intro-content__item">
                     <div className="intro-content__large-title">
-                        Why 
-                        <br></br>
+                        Why <span> </span>
+                        <br className="intro-content__break"></br>
                         Choose Us
                         </div>
                 </li>

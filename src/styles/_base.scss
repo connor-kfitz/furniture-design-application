@@ -4,6 +4,13 @@ $light-grey: #d5d7d7;
 $accent: #E58411;
 $primary-font: #1E1E1E;
 
+$breakpoint-one: 81.875em;
+$breakpoint-two: 71.875em;
+$breakpoint-three: 60em;
+$breakpoint-four: 47em;
+$breakpoint-five: 40.625em;
+$breakpoint-six: 34em;
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +25,10 @@ $primary-font: #1E1E1E;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @include respond($breakpoint-four) {
+        font-size: 46%;
+    }
 }
 
 body {

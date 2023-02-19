@@ -2,8 +2,22 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
-    padding: 4rem 8.5rem;
+    padding: 4rem 0;
     margin-bottom: 4rem;
+
+    &__mobile-menu {
+        display: none;
+
+        @include respond($breakpoint-three) {
+            display: block;
+            background-image: url('../images/menu-icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 5rem;
+            height: 5rem;
+            filter: invert(91%) sepia(75%) saturate(0%) hue-rotate(142deg) brightness(119%) contrast(101%);
+        }
+    }
 
     &__logo {
         font-size: 28px;
@@ -16,6 +30,10 @@
         align-items: center;
         list-style: none;
         width: 57.5rem;
+
+        @include respond($breakpoint-three) {
+            display: none;
+        }
     }
 
     &__item {
@@ -105,11 +123,28 @@
 .intro-content {
     display: flex;
 
+    @include respond($breakpoint-one) {
+        flex-wrap: wrap;
+    }
+
     &__item {
         display: flex;
         flex: 1;
         flex-direction: column;
         list-style: none;
+
+        @include respond($breakpoint-one) {
+            flex: 1 0 40%;
+            margin: 0 2rem 2rem 2rem;
+            
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+
+        @include respond($breakpoint-six) {
+            flex: 1 0 70%;
+        }
 
         &:not(:last-child) {
             margin-right: 2rem;
@@ -121,6 +156,11 @@
         line-height: 1.2;
         font-family: 'Gilroy-Bold';
         margin: auto 0;
+
+        @include respond($breakpoint-six) {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
     }
 
     &__title {
@@ -132,6 +172,12 @@
         font-size: 1.6rem;
         font-family: 'Gilroy-Regular';
         margin: 1.75rem 0 2rem 0;
+    }
+
+    &__break {
+        @include respond($breakpoint-six) {
+            display: none;
+        }
     }
 }
 
@@ -185,11 +231,61 @@
     width: 100%;
     margin-bottom: 6rem;
 
+    @include respond($breakpoint-one) {
+        flex-wrap: wrap;
+    }
+
+    @include respond($breakpoint-five) {
+        flex-wrap: no-wrap;
+    }
+
     &__item {
-        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 24rem;
+
+        @include respond($breakpoint-one) {
+            flex-wrap: wrap;
+            flex: 1 0 30%;
+            margin: 0 2rem 10rem 2rem;
+        }
+
+        @include respond($breakpoint-five) {
+            margin-bottom: 0;
+        }
 
         &:not(:last-child) {
             margin-right: 4rem;
+
+            @include respond($breakpoint-one) {
+                margin-right: 2rem;
+            }
+        }
+        
+        &:nth-child(4) {
+            @include respond($breakpoint-five) {
+                display: none;
+            }
+        }
+
+        &:nth-child(5) {
+            @include respond($breakpoint-one) {
+                margin-bottom: 0;
+            }
+
+            @include respond($breakpoint-five) {
+                display: none;
+            }
+        }
+
+        &:nth-child(6) {
+            @include respond($breakpoint-one) {
+                margin-bottom: 0;
+            }
+
+            @include respond($breakpoint-five) {
+                display: none;
+            }
         }
     }
 
@@ -207,9 +303,15 @@
         left: 0;
         right: 0;
         margin: 0 auto;
+
+        @include respond($breakpoint-four) {
+            width: 22rem;
+            height: auto;
+        }
     }
 
     &__bottom-box {
+        flex: 1;
         background-color: #fff;
         border-bottom-left-radius: 1.5rem;
         border-bottom-right-radius: 1.5rem;
@@ -239,6 +341,7 @@
     }
 
     &__purchase-box {
+        margin-top: auto;
         display: flex;
         align-items: center;
     }
@@ -281,6 +384,15 @@
         width: 4.9rem;
         border-radius: 10rem;
         cursor: pointer;
+
+        @include respond($breakpoint-one) {
+            left: -0.3em;
+            top: 47%;
+        }
+
+        @include respond($breakpoint-five) {
+           top: 30%;     
+        }
     }
 
     &__right-carousel-arrow {
@@ -297,6 +409,15 @@
         transform: rotate(180deg);
         border-radius: 10rem;
         cursor: pointer;
+
+        @include respond($breakpoint-one) {
+            right: -0.3em;
+            top: 47%;
+        }
+
+        @include respond($breakpoint-five) {
+            top: 30%;     
+        }
     }
 }
 
@@ -309,6 +430,14 @@
 .experiences-img-cont {
     position: relative;
     margin: 6rem 6rem 0 0;
+
+    @include respond($breakpoint-two) {
+        margin-left: -16rem;
+    }
+
+    @include respond($breakpoint-three) {
+        display: none;
+    }
 
     &__top-decoration {
         position: absolute;
@@ -339,6 +468,14 @@
     flex-direction: column;
     margin: 0 12rem;
 
+    @include respond($breakpoint-three) {
+        margin: 0 8rem;
+    }
+
+    @include respond($breakpoint-five) {
+        margin: 0 4rem;
+    }
+
     &__header {
         font-family: 'Gilroy-Light';
         font-size: 1.8rem;
@@ -367,6 +504,10 @@
     flex-direction: column;
     margin: 0 8.5rem;
 
+    @include respond($breakpoint-five) {
+        margin: 0 4rem;
+    }
+
     &__header {
         font-family: 'Gilroy-Light';
         font-size: 1.8rem;
@@ -394,8 +535,16 @@
     display: flex;    
     align-items: flex-end;
 
+    @include respond($breakpoint-three) {
+        display: none;
+    }
+
     &__left-box {
         margin-bottom: -8.25rem;
+
+        @include respond($breakpoint-two) {
+            display: none;
+        }
     }
 
     &__small-img {
@@ -419,21 +568,56 @@
 }
 
 .testimonials-cards {
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     list-style: none;
-    padding: 0 5rem;
 
     &__item {
         display: flex;
+        flex-direction: column;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
         height: 47.7rem;
         width: 37rem;
+        border-radius: 2rem;
+
+        @include respond($breakpoint-five) {
+            flex: 1;
+        }
 
         &:not(:last-child) {
             margin-right: 4rem;
+
+            @include respond($breakpoint-two) {
+                margin-right: 0;
+            }
+        }
+
+        &:last-child {
+            @include respond($breakpoint-two) {
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-right: 4rem;
+
+        }
+
+        &:nth-child(3) {
+            margin-right: 4rem;
+
+            @include respond($breakpoint-five) {
+                margin-right: 0;
+            }
+        }
+
+        &:nth-child(4) {
+            @include respond($breakpoint-five) {
+                display: none;
+            }
         }
     }
 
@@ -485,16 +669,63 @@
     &__rating {
         margin-bottom: 0;
     }
+
+    &__left-carousel-arrow {
+        position: absolute;
+        z-index: 10;
+        left: -2.5rem;
+        top: 37%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 4.9rem;
+        width: 4.9rem;
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+
+    &__right-carousel-arrow {
+        position: absolute;
+        z-index: 10;
+        right: -2.5rem;
+        top: 37%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 4.9rem;
+        width: 4.9rem;
+        transform: rotate(180deg);
+        border-radius: 10rem;
+        cursor: pointer;
+    }
 }
 
 .footer-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 10rem;
+
+    @include respond($breakpoint-six) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &__info-box {
         flex: 0 0 25%;
-        margin-right: 15rem;
+        margin-right: 8rem;
+
+        @include respond($breakpoint-three) {
+            flex: 0 0 33%;
+            margin-right: 4rem;
+        }
+
+        @include respond($breakpoint-six) {
+            flex: 0 0 100%;
+            margin: 0;
+            margin-bottom: 3rem;
+        }
     }
 
     &__title {
@@ -509,11 +740,19 @@
     }
 
     &__services-box {
-        flex: 1;
         list-style: none;
+        margin-left: auto;
+
+        @include respond($breakpoint-six) {
+            flex: 1;
+        }
 
         &:not(:last-child){
-            margin-right: 14rem;
+            margin-right: 4rem;
+
+            @include respond($breakpoint-six) {
+                margin: 0 1rem;
+            }
         }
     }
 

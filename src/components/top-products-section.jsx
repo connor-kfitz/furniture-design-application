@@ -41,6 +41,8 @@ export default function TopProducts() {
         }
     ]
 
+    
+
     return (
         <section className="top-products">
             <h2 class="top-products__header">Best Selling Products</h2>
@@ -52,7 +54,7 @@ export default function TopProducts() {
                 <div className="product-cards__right-carousel-arrow">
                     <img class="product-cards__coursel-arrow-icon" src={CarouselArrow} alt="Carousel arrow"></img>
                 </div>
-                {topProductList.map((item)=>(
+                {topProductList.map((item, index)=>(
                     <li className="product-cards__item">
                         <div className="product-cards__top-box">
                             <img className="product-cards__chair-img" src={item.img} alt="Chair"></img>
