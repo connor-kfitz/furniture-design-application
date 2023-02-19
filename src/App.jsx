@@ -4,6 +4,7 @@ import Intro from './components/intro-section';
 import TopProducts from './components/top-products-section';
 import Experiences from './components/experiences-section';
 import Materials from './components/materials-section';
+import Testimonials from './components/testimonial-section';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <TopProducts></TopProducts>
         <Experiences></Experiences>
         <Materials></Materials>
+        <Testimonials></Testimonials>
       </main>
     </div>
   );

@@ -54,5 +54,25 @@
 .materials {
     display: flex;
     align-items: center;
-    padding: 0 0 20rem 0;
+    padding: 0 0 24rem 0;
+}
+
+.testimonials {
+    padding-bottom: 25rem;
+    
+    &__header {
+        font-family: 'Gilroy-Light';
+        font-size: 1.8rem;
+        letter-spacing: 0.175em;
+        color: $accent;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        font-family: 'Gilroy-Bold';
+        font-size: 4.2rem;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
 }
