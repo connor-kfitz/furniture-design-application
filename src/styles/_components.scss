@@ -486,3 +486,80 @@
         margin-bottom: 0;
     }
 }
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+
+    &__info-box {
+        flex: 0 0 25%;
+        margin-right: 15rem;
+    }
+
+    &__title {
+        font-family: 'Gilroy-Bold';
+        font-size: 2.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        opacity: .8;
+    }
+
+    &__services-box {
+        flex: 1;
+        list-style: none;
+
+        &:not(:last-child){
+            margin-right: 14rem;
+        }
+    }
+
+    &__item {
+        font-family: 'Inter';
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:not(:last-child){
+            margin-bottom: 1.75rem;
+        }
+
+        &.with-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        &.title {
+            font-size: 1.7rem;
+            color: $accent;
+        }
+    }
+
+    &__icon {
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+
+    &__terms {
+        font-family: 'Inter';
+        font-size: 1.5rem;
+        opacity: .5;
+        margin-right: auto;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        opacity: .8;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}

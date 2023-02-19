@@ -5,18 +5,20 @@ import TopProducts from './components/top-products-section';
 import Experiences from './components/experiences-section';
 import Materials from './components/materials-section';
 import Testimonials from './components/testimonial-section';
+import Footer from './components/footer';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Header/>
       <main>
-        <Intro></Intro>
-        <TopProducts></TopProducts>
-        <Experiences></Experiences>
-        <Materials></Materials>
-        <Testimonials></Testimonials>
+        <Intro/>
+        <TopProducts/>
+        <Experiences/>
+        <Materials/>
+        <Testimonials/>
       </main>
+      <Footer/>
     </div>
   );
 }
