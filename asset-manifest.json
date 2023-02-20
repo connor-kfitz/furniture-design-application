@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/furniture-design-application/static/css/main.73d31065.css",
+    "main.js": "/furniture-design-application/static/js/main.fed4a4be.js",
+    "static/js/787.17272837.chunk.js": "/furniture-design-application/static/js/787.17272837.chunk.js",
+    "static/media/header-background.png": "/furniture-design-application/static/media/header-background.67cb7ddf27b9fa716eb4.png",
+    "static/media/experiences-img.png": "/furniture-design-application/static/media/experiences-img.3a2cec45f46d13d55efa.png",
+    "static/media/materials-large-img.png": "/furniture-design-application/static/media/materials-large-img.c87d5a2878120625cf9d.png",
+    "static/media/testimonial-three-background.png": "/furniture-design-application/static/media/testimonial-three-background.0228ab98912151e927ec.png",
+    "static/media/testimonial-one-background.png": "/furniture-design-application/static/media/testimonial-one-background.28599b97a58eadd579d8.png",
+    "static/media/testimonial-two-background.png": "/furniture-design-application/static/media/testimonial-two-background.5bf70b1e4f2012c34ee5.png",
+    "static/media/materials-medium-img.png": "/furniture-design-application/static/media/materials-medium-img.87ceb5dc986cd600adfb.png",
+    "static/media/materials-small-img.png": "/furniture-design-application/static/media/materials-small-img.cf93d75b1a7f621bd383.png",
+    "static/media/anjay-chair-img.png": "/furniture-design-application/static/media/anjay-chair-img.195cdbd22ef985010e4c.png",
+    "static/media/baltsar-chair-img.png": "/furniture-design-application/static/media/baltsar-chair-img.c602ca86d32f0b905dd1.png",
+    "static/media/nyantuy-chair-img.png": "/furniture-design-application/static/media/nyantuy-chair-img.ac71cd04dde247af7642.png",
+    "static/media/sakarias-chair-img.png": "/furniture-design-application/static/media/sakarias-chair-img.2535d7a2ec21c10d737f.png",
+    "static/media/bag-img.svg": "/furniture-design-application/static/media/bag-img.32c958af94e7c97c6ccfca18cdf4ed01.svg",
+    "index.html": "/furniture-design-application/index.html",
+    "static/media/star-no-fill.svg": "/furniture-design-application/static/media/star-no-fill.34ff42b27d16cc7e10c23cc36454b7c8.svg",
+    "static/media/star-icon.svg": "/furniture-design-application/static/media/star-icon.5e4f0e1caf1cf32ffc267689e59a30f4.svg",
+    "static/media/twitter-icon.svg": "/furniture-design-application/static/media/twitter-icon.82fd35fd8b13c04e1dfc50dd6ee20bab.svg",
+    "static/media/instagram-icon.svg": "/furniture-design-application/static/media/instagram-icon.847a2f8b2465d763deb7f3356ab9e1f8.svg",
+    "static/media/down-arrow-img.svg": "/furniture-design-application/static/media/down-arrow-img.ee9c6042b3e9869de23a600b565b5f40.svg",
+    "static/media/addition-icon.svg": "/furniture-design-application/static/media/addition-icon.2e75e9266776a6849d67f6db6b7c9611.svg",
+    "static/media/search-icon.svg": "/furniture-design-application/static/media/search-icon.7b2ca6be269d8a0e2f4b41d0f900ae21.svg",
+    "static/media/facebook-icon.svg": "/furniture-design-application/static/media/facebook-icon.5aecc189faa4e615877164a5078bc4eb.svg",
+    "static/media/carousel-arrow-icon.svg": "/furniture-design-application/static/media/carousel-arrow-icon.52b938247cd0f0b1986e67144e58de4d.svg",
+    "static/media/right-arrow-img.svg": "/furniture-design-application/static/media/right-arrow-img.28f87e9423eb7e849b790f3a20c03783.svg",
+    "main.73d31065.css.map": "/furniture-design-application/static/css/main.73d31065.css.map",
+    "main.fed4a4be.js.map": "/furniture-design-application/static/js/main.fed4a4be.js.map",
+    "787.17272837.chunk.js.map": "/furniture-design-application/static/js/787.17272837.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73d31065.css",
+    "static/js/main.fed4a4be.js"
+  ]
+}
