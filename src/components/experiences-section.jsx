@@ -13,7 +13,7 @@ export default function Experiences() {
                 <h3 className="experiences-content__header">Experiences</h3>
                 <div className="experiences-content__title">We Provide You The Best Experience</div>
                 <p className="experiences-content__text">You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
-                <LinkProduct name="More Info"></LinkProduct>
+                <LinkProduct name="More Info"/>
             </div>
         </section>
     )

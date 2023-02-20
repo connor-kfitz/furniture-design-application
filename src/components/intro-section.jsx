@@ -31,7 +31,7 @@ export default function Intro() {
                     <li className="intro-content__item">
                         <div className="intro-content__title" >{item.title}</div>
                         <div className="intro-content__text" >{item.content}</div>
-                        <LinkProduct name="More Info"></LinkProduct>
+                        <LinkProduct name="More Info"/>
                     </li>
                 ))}
             </ul>

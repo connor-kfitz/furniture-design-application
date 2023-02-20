@@ -2,7 +2,6 @@ import FacebookIcon from "../images/facebook-icon.svg";
 import TwitterIcon from "../images/twitter-icon.svg";
 import InstagramIcon from "../images/instagram-icon.svg";
 
-
 export default function Footer() {
 
     const services = ['Email Marketing', 'Campaigns', 'Branding'];
@@ -21,7 +20,6 @@ export default function Footer() {
             icon: InstagramIcon
         },
     ];
-
 
     return (
         <footer className="footer">

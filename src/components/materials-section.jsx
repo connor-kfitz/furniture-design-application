@@ -11,7 +11,7 @@ export default function Materials() {
                 <h3 className="materials-content__header">Materials</h3>
                 <div className="materials-content__title">Very serious materials for making furniture</div>
                 <p className="materials-content__text">Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price</p>
-                <LinkProduct name="More Info"></LinkProduct>
+                <LinkProduct name="More Info"/>
             </div>
             <div className="materials-img-cont">
                 <div className="materials-img-cont__left-box">

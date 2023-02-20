@@ -46,7 +46,7 @@ export default function TopProducts() {
     return (
         <section className="top-products">
             <h2 class="top-products__header">Best Selling Products</h2>
-            <ProductSlider></ProductSlider>
+            <ProductSlider/>
             <ul className="product-cards">
                 <div className="product-cards__left-carousel-arrow">
                     <img class="product-cards__coursel-arrow-icon" src={CarouselArrow} alt="Carousel arrow"></img>
@@ -64,7 +64,7 @@ export default function TopProducts() {
                             <div className="product-cards__title">{item.title}</div>
                             <div className="product-cards__text">{item.content}</div>
                             <div className="product-cards__rating">
-                                <StarRating stars={item.rating} ></StarRating>
+                                <StarRating stars={item.rating}/>
                             </div>
                             <div className="product-cards__purchase-box">
                                 <span className="product-cards__price"><span className="product-cards__currency">$</span>{item.price}</span>
@@ -76,7 +76,7 @@ export default function TopProducts() {
                     </li>
                 ))}
             </ul>
-            <LinkProduct name="View All" scale={1.3}></LinkProduct>
+            <LinkProduct name="View All" scale={1.3}/>
         </section>
     )
 }

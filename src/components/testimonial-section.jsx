@@ -58,7 +58,7 @@ export default function Testimonials() {
                             <div className="testimonials-cards__location">{item.location}</div>
                             <div className="testimonials-cards__text">{item.text}</div>
                             <div className="testimonials-cards__rating">
-                                <StarRating stars={item.rating} scale={.9}></StarRating>
+                                <StarRating stars={item.rating} scale={.9}/>
                             </div>
                         </div>
                     </li>

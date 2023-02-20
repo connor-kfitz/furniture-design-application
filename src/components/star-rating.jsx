@@ -22,10 +22,6 @@ export default function StarRating({stars, scale}) {
 
     const starArray = ratingToArray(stars);
 
-    console.log(starArray)
-
-    console.log(ratingToArray(stars));
-
     return (
         <div>
             {starArray.map((item) => (

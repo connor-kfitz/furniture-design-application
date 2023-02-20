@@ -1,6 +1,5 @@
 import shoppingCart from "../images/bag-img.svg"
 import downArrow from "../images/down-arrow-img.svg"
-import MenuIcon from "../images/menu-icon.png";
 
 export default function Nav() {
 

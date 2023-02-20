@@ -4,7 +4,7 @@ import SearchBar from "./searchBar";
 export default function Header() {
     return (
         <header className="header">
-            <Nav></Nav>
+            <Nav/>
             <h1 className="header__text">
                 Make Your Interior More 
                 <br></br>
@@ -15,7 +15,7 @@ export default function Header() {
                 <br></br>
                 and modern with ease and speed
             </span>
-            <SearchBar></SearchBar>
+            <SearchBar/>
         </header>
     )
 }
