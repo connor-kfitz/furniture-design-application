@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Furniture Desgin Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Link
 
-## Available Scripts
+http://connor-kfitz.github.io/furniture-design-application
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+The goal of this project was to create a responsive furniture design page, based off of the following Figma page:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://www.figma.com/community/file/1061732519182077733
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Outcomes
 
-### `npm test`
+This project was succsessful in terms of mimicking the UI/UX design, and implementing responsivness.  I elected to use React for the sake of gaining experience using the framework, and implementation of components such as list items.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are many areas I feel could have created better, and will be strongly considered for future development.  The carousel responsives works, but I believe I could make it much better by using JS.  This would also allow me to implement button / animation functionallity, as there is currently none.
 
-### `npm run build`
+My SCSS / CSS component delegation has improved greatly, but there is still a lot of room for work.  My use of semantic HTML elements has also imrpoved to a good state, but is by no means great.  Will be working on both of these going forward.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Lastly, I feel my React file model structure could use a bit of improvement.  Seperating views from components, making more components when necessary, moving constants & helper functions to individual files, etc...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+TLDR:  The project had great outcomes with lots of takeaways going forward!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Pictures
 
-### `npm run eject`
+### Desktop
+![Desgin Width - 1440px](./images/1440px.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Tablet
+![Tablet Width - 900px](./images/900px.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Mobile
+![Mobile Width - 375px](./images/375px.png)
